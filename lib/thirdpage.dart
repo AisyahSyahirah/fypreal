@@ -128,7 +128,7 @@ class _ThirdPageState extends State<ThirdPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('TUTOR LIST'),
+        title: const Text('TUTOR UPDATE'),
       ),
       body: Center(
         child: Container(

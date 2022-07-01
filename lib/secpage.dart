@@ -34,7 +34,7 @@ class _SecPageState extends State<SecPage> {
             Padding(
                 padding: const EdgeInsets.all(20),
                 child: ElevatedButton(
-                    child: const Text('VIEW TUTOR LIST'),
+                    child: const Text('TUTOR UPDATE'),
                     onPressed: () {
                       Navigator.pushNamed(
                         context,
@@ -44,7 +44,7 @@ class _SecPageState extends State<SecPage> {
             Padding(
                 padding: const EdgeInsets.all(10),
                 child: ElevatedButton(
-                    child: const Text('BECOME A TUTOR'),
+                    child: const Text('TUTOR APPLICATION'),
                     onPressed: () {
                       Navigator.pushNamed(
                         context,
