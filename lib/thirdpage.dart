@@ -71,7 +71,7 @@ class _ThirdPageState extends State<ThirdPage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-         content: new Text(' Full name: $fname \n IC number: $icno \n Contact number: $contact \n Email: $mail \n Subject offered: $sub'),
+         content: new Text(' Full name: $fname \n \n IC number: $icno \n \n Contact number: $contact \n \n Email: $mail \n \n Subject offered: $sub'),
           actions: <Widget>[
             new TextButton(
               child: new Text("Update"),
@@ -159,7 +159,6 @@ class _ThirdPageState extends State<ThirdPage> {
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: ElevatedButton(
-                        
                         child: const Text('Search'),
                         onPressed: () {
                           _read();

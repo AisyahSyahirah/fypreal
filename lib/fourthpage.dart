@@ -88,7 +88,7 @@ class _FourthPageState extends State<FourthPage> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: new Text("TUTOR DETAILS", textAlign: TextAlign.center),
-          content: new Text(' Full name: $fullname \n IC number: $icno \n Contact number: $contactno \n Email: $email \n Subject offered: $subject'),
+          content: new Text(' Full name: $fullname \n \n IC number: $icno \n \n Contact number: $contactno \n \n Email: $email \n \n Subject offered: $subject'),
           actions: <Widget>[
             new TextButton(child: new Text("Confirm"), onPressed: () {
                       Navigator.pushNamed(
@@ -128,7 +128,7 @@ class _FourthPageState extends State<FourthPage> {
                     Container(
                       child: Text('Application form to become a tutor',
                           style: TextStyle(color: Colors.white)),
-                      color: Colors.blue,
+                      color: Colors.pink,
                       padding: EdgeInsets.all(20.0),
                       margin: EdgeInsets.all(15.0),
                     ),
@@ -141,7 +141,7 @@ class _FourthPageState extends State<FourthPage> {
                           ),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return '';
+                              return 'Please enter some text';
                             }
                             return null;
                           },
@@ -159,7 +159,7 @@ class _FourthPageState extends State<FourthPage> {
                           ),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return '';
+                              return 'Please enter some text';
                             }
                             return null;
                           },
@@ -177,7 +177,7 @@ class _FourthPageState extends State<FourthPage> {
                           ),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return '';
+                              return 'Please enter some text';
                             }
                             return null;
                           },
@@ -195,7 +195,7 @@ class _FourthPageState extends State<FourthPage> {
                           ),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return '';
+                              return 'Please enter some text';
                             }
                             return null;
                           },
@@ -213,7 +213,7 @@ class _FourthPageState extends State<FourthPage> {
                           ),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return '';
+                              return 'Please enter some text';
                             }
                             return null;
                           },
@@ -225,7 +225,11 @@ class _FourthPageState extends State<FourthPage> {
                     Padding(
                       padding: const EdgeInsets.all(8),
                       child: ElevatedButton(
-                        onPressed: _create,
+                        onPressed: () {
+                          if (_formKey.currentState!.validate()) {
+                            _create();
+                          }
+                        },
                         child: const Text('Submit'),
                       ),
                     ),
