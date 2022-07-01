@@ -157,7 +157,7 @@ class _ThirdPageState extends State<ThirdPage> {
                           },
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(20),
                       child: ElevatedButton(
                         
                         child: const Text('Search'),

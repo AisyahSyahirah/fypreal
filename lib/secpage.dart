@@ -23,10 +23,10 @@ class _SecPageState extends State<SecPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
-                child: Text('TUTORING MANAGEMENT SYSTEM'),
-                color: Colors.purple,
-                padding: EdgeInsets.all(50.0),
-                margin: EdgeInsets.all(15.0),
+                child: Text('TUTORING MANAGEMENT SYSTEM',
+                style: TextStyle(color: Colors.black)),
+                padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.all(10.0),
               ),
             Padding(
                 padding: const EdgeInsets.all(20),
