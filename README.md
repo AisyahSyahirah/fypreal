@@ -1,16 +1,33 @@
-# tutor
+## Tutoring Management System
 
-A new Flutter project.
+### Name and Matric Number of the Group Members
+    1. Yasmin Hana binti Zulkifli 1914198
+    2. Nur Aisyah Syahirah binti Osman 1819266
 
-## Getting Started
+### Introduction
+    Our application is a platform to display the tutors that teach a certain highschool subjects. Users can
+    apply for the position by filling in the form provided in the application. Users can then search for 
+    their details and can choose to update or delete the information. The only details that will be displayed 
+    in the application are the tutor's name, subjects offered and the tutor's contact number. 
 
-This project is a starting point for a Flutter application.
+### Objectives
+    1. To provide tutors that teaches secondary school subjects
+    2. To help tutors make pocket money
 
-A few resources to get you started if this is your first Flutter project:
+### Features and Functionalities
+    1. CRUD functions
+    2. Admin login
+    3. Search feature for tutors details
+    4. Form for tutors information details
+    4. Flutterfire plugin
+    
+### Screen navigation (routing) and widgets (UI and reusable widget) implementation
+![alt text](wireframe1.png)
+![alt text](wireframe2.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![alt text](wireframe3.png)
+![alt text](wireframe4.png)
+	
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Sequence diagram
+![alt text](SequenceDiagram.png)
