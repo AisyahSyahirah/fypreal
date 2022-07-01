@@ -39,7 +39,6 @@ class MyApp extends StatelessWidget {
           Routes.secPage: (context) => const SecPage(),
           Routes.thirdPage: (context) => const ThirdPage(),
           Routes.fourthPage: (context) => const FourthPage(),
-          
         });
   }
 }

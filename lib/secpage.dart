@@ -48,7 +48,7 @@ class _SecPageState extends State<SecPage> {
                       );
                     })),
             Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(10),
                 child: ElevatedButton(
                     child: const Text('BECOME A TUTOR'),
                     onPressed: () {
