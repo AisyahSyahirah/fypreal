@@ -120,7 +120,7 @@ class _FirstPageState extends State<FirstPage> {
                 child: Text('TUTORING MANAGEMENT SYSTEM',
                 style: TextStyle(color: Colors.white)),
                 decoration:
-                    BoxDecoration(shape: BoxShape.rectangle, color: Colors.pinkAccent[100]),
+                    BoxDecoration(shape: BoxShape.rectangle, color: Colors.pinkAccent),
                 padding: EdgeInsets.all(50.0),
                 margin: EdgeInsets.all(15.0),
               ),
