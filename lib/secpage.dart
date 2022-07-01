@@ -48,6 +48,15 @@ class _SecPageState extends State<SecPage> {
                         Routes.fourthPage,
                       );
                     })),
+              new TextButton(
+              child: new Text("Logout"),
+              onPressed: () {
+                Navigator.pushNamed(
+                        context,
+                        Routes.firstPage,
+                      );
+              }
+            ),
           ],
         ),
       )),
