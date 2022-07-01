@@ -22,12 +22,6 @@ class _SecPageState extends State<SecPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Container(
-                child: Text('TUTORING MANAGEMENT SYSTEM',
-                style: TextStyle(color: Colors.black)),
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.all(10.0),
-              ),
             new TextButton(
               child: new Text("Home"),
               onPressed: () {
