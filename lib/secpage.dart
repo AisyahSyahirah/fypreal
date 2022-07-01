@@ -25,9 +25,18 @@ class _SecPageState extends State<SecPage> {
             Container(
                 child: Text('TUTORING MANAGEMENT SYSTEM',
                 style: TextStyle(color: Colors.black)),
-                padding: EdgeInsets.all(20.0),
+                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.all(10.0),
               ),
+            new TextButton(
+              child: new Text("Home"),
+              onPressed: () {
+                Navigator.pushNamed(
+                        context,
+                        Routes.firstPage,
+                      );
+              }
+            ),
             Padding(
                 padding: const EdgeInsets.all(20),
                 child: ElevatedButton(
@@ -48,15 +57,7 @@ class _SecPageState extends State<SecPage> {
                         Routes.fourthPage,
                       );
                     })),
-              new TextButton(
-              child: new Text("Logout"),
-              onPressed: () {
-                Navigator.pushNamed(
-                        context,
-                        Routes.firstPage,
-                      );
-              }
-            ),
+              
           ],
         ),
       )),
