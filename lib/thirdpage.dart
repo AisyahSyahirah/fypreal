@@ -71,6 +71,7 @@ class _ThirdPageState extends State<ThirdPage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
+          title: new Text("TUTOR DETAILS", textAlign: TextAlign.center),
          content: new Text(' Full name: $fname \n \n IC number: $icno \n \n Contact number: $contact \n \n Email: $mail \n \n Subject offered: $sub'),
           actions: <Widget>[
             new TextButton(
