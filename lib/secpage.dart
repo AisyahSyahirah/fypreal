@@ -14,7 +14,7 @@ class _SecPageState extends State<SecPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HOMEPAGE'),
+        title: const Text('MENU'),
       ),
       body: Center(
           child: Container(

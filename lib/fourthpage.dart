@@ -111,7 +111,7 @@ class _FourthPageState extends State<FourthPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('LOGIN'),
+        title: const Text('TUTOR APPLICATION'),
       ),
       body: Center(
           child: Container(
