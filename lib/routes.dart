@@ -1,8 +1,10 @@
-import 'package:tutor/firstpage.dart';
+import 'package:tutor/main.dart';
 
 class Routes {
-  static const firstPage = '/firstpage';
-  static const secPage = '/secpage';
-  static const thirdPage = '/thirdpage';
-  static const fourthPage = '/fourthpage';
+  static const login = '/login';
+  static const home = '/home';
+  //static const tournament = '/tournament';
+  //static const result = '/result';
+  //static const gallery = '/fifthpage';
 }
+

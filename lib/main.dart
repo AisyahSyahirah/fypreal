@@ -1,22 +1,23 @@
-import 'package:flutter/material.dart';
-import 'routes.dart';
-import 'firstpage.dart';
-import 'secpage.dart';
-import 'thirdpage.dart';
-import 'fourthpage.dart';
+//import 'package:syncfusion_flutter_calendar/calendar.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/src/material/colors.dart';
+import 'package:flutter/material.dart';
+import 'routes.dart';
+import 'login.dart';
+import 'home.dart';
+import 'tournament.dart';
+import 'result.dart';
+//import 'gallery.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    // Replace with actual values
     options: FirebaseOptions(
-      apiKey: "AIzaSyAKd8f-6TASYCG4FFghTy61esDwEJD_TCo",
-      appId: "1:637934060464:android:a018e70a7b1b268e094c75",
-      messagingSenderId: "637934060464",
-      projectId: "tutor1-50c06",
+      apiKey: "AIzaSyCLGj-538qvfT_x3B14I8ano8gzN3FAbE8",
+      appId: "1:807137615655:android:f5a883aa517eb5718c9302",
+      messagingSenderId: "807137615655",
+      projectId: "fypreal-55a12",
     ),
   );
   runApp(const MyApp());
@@ -28,17 +29,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Tutoring System',
+        title: 'Sports Event System',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.pink,
+          primarySwatch: Colors.deepPurple,
         ),
-        initialRoute: Routes.firstPage,
+        initialRoute: Routes.login ,
         routes: {
-          Routes.firstPage: (context) => const FirstPage(),
-          Routes.secPage: (context) => const SecPage(),
-          Routes.thirdPage: (context) => const ThirdPage(),
-          Routes.fourthPage: (context) => const FourthPage(),
+          Routes.login: (context) => Login(),
+          Routes.home: (context) =>  Home(),
+          //Routes.tournament: (context) => const Tournament(),
+          //Routes.result: (context) => const Result(),
+          //Routes.gallery: (context) => const Gallery(),
         });
   }
 }
+
